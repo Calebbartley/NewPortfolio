@@ -1,16 +1,20 @@
-
-import { Router } from './Router/Router';
+import { Routing } from './Routing/Routing';
 import { BrowserRouter } from 'react-router-dom';
 import React from 'react';
+import { StyledContainer } from './components/styles.jsx';
 
-import './styles.css';
+
+
+import './components/styles.jsx';
 
 export default function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+    <div>
+      <StyledContainer>
+        <BrowserRouter>
+          <Routing />
+        </BrowserRouter>
+      </StyledContainer>
     </div>
   );
 }
