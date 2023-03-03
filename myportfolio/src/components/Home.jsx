@@ -1,20 +1,37 @@
 
 import React from 'react'
-import styled, { withTheme } from "styled-components";
-import { colors, StyledContainer,Title, } from './styles';
-import Navbar from './Navbar';
+
 import './Home.css';
 
 
 const Home=()=> {
   return (
-    <div>
-      <div>
-        <Navbar />
+    <div className="Body">
+      <div className="logoContainer">
+        <img src={powerline} className="powerline" alt="" />
       </div>
-      <h1 color={colors.light1} size={50}>
-        This is the End
-      </h1>
+      <div className="searchBar">
+        <div className="searchIconContainer">
+          <img src={search} className="search" alt="" />
+        </div>
+        <input
+          className="searchInput"
+          type="text"
+          placeholder="Collection, Item, or User..."
+        />
+      </div>
+
+      <div className="headerItems">
+        <p>Drops</p>
+        <p>Marketplace</p>
+        <p>Create</p>
+      </div>
+      <div className="headerActions">
+        <div className="themeSwitchContainer">
+          <img src={bulb} alt="" />
+        </div>
+      </div>
+      <div className="loginButton">GET IN</div>
     </div>
   );
 }

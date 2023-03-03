@@ -2,40 +2,37 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  text-align: center;
+  background: url('./assets/redpyramid.jpg');
+  background-position: center;
+  height: 1500px;
+  width: 100px;
+  overflow: overlay;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: antiquewhite;
-}
 .Text > h6 {
   text-align: center;
   justify-content: left;
   color: blanchedalmond;
 }
+
  .Text > h4 {
   text-align: center;
   justify-content: left;
   color: blanchedalmond;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(133, 115, 115);
+}
+
+::-webkit-scrollbar-track{
+  background: rgba(0,0,0,0.2);
 }
 
 @keyframes App-logo-spin {

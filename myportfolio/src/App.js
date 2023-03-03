@@ -1,20 +1,26 @@
-import { Routing } from './Routing/Routing';
-import { BrowserRouter } from 'react-router-dom';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
-import { StyledContainer } from './components/styles.jsx';
+import './App.css';
+import Home from './components/Home';
+import Contact from './components/Contact';
+import AboutMe from './components/AboutMe';
 
 
 
-import './components/styles.jsx';
 
-export default function App() {
+
+const App= ()=> {
   return (
-    <div>
-      <StyledContainer>
-        <BrowserRouter>
-          <Routing />
-        </BrowserRouter>
-      </StyledContainer>
-    </div>
+    
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/AboutMe" element={<AboutMe/>} />
+        </Routes>
+      </Router>
+    
   );
 }
+export default App;
