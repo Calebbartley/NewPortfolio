@@ -12,7 +12,7 @@ export const Routing = () =>{
       <Router>
         <StyledContainer>
           <Routes>
-            <Route exact path="/" element={<Home />}
+            <Route exact path="/" element={<Home/>}
             />
           </Routes>
         </StyledContainer>

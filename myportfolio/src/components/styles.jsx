@@ -1,13 +1,10 @@
 
 import styled from "styled-components";
-  
-import redpyramid from "../assets/Images/redpyramid.jpg";
 import { Link } from "react-router-dom";
 
 
-
 export const colors = {
-  primary: '#FFF5EE',
+  primary: '#1f1e29',
   theme: '#c70039',
   light1: '#f3f4f6',
   light2: '#e5e7eb',
@@ -26,10 +23,9 @@ export const StyledContainer = styled.div`
   justify-content: Center;
   align-items: center;
   background-attachment: fixed;
-  background: url(${redpyramid})
 `
 export const Title = styled.h2`
-font-size: ${(props) => props.size}px ;
+font-size: 30px ;
 text-align: center;
 color: ${(props) => props.color? props.color: colors.primary} ;
 padding: 5px;
