@@ -1,14 +1,19 @@
-.Body{
+.head{
     padding-left: 175px ;
     display: flex;
     justify-content: space-between;
 
 }
 
+body{
+    display:flex;
+}
+
 h1 {
 	font-size: 45px;
-	color: red;
+	color: linear-gradient(to right, #c65056, #282a5c);
     align-items: center;
+    margin: 500px;
 }
 .Text{
     align-items: center;
@@ -146,10 +151,16 @@ h1 {
     max-height: 20px;
     max-width: 10px;
     margin: 30px 200px;
-    justify-content: space-between;
+    justify-items: space-between;
     align-items: center;
     padding-left: 1900px;
-    
+    font-size: 30px;
+}
+
+.headerItems > img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
 }
 
 .headerItems >p{
