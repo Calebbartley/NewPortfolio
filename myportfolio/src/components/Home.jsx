@@ -12,7 +12,7 @@ import './Home.css';
 
 const Home=()=> {
   return (
-    <div className='body'>
+    <div className="body">
       <div className="head">
         <div className="logoContainer">
           <img src={powerline} className="powerline" alt="" />
@@ -25,14 +25,13 @@ const Home=()=> {
             Resume
           </div>
         </div>
-        </div>
-        <div className="Text">
-          <h1>
-          Hi I'm Caleb I'm a FullStack Developer with a focus in react. 
-          <h4>Music • Web3 • Crypto  </h4>
-          </h1>
-          
-        </div>
+      </div>
+      <div className="Text">
+        <h1>
+          Hi I'm Caleb I'm a FullStack Developer with a focus in react.
+          <h4>Music • Web3 • Crypto </h4>
+        </h1>
+      </div>
     </div>
   );
 }
